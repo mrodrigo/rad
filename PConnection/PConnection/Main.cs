@@ -1,5 +1,6 @@
-using MySql.Data.MySqlClient;
 using System;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace PConnection
 {
@@ -19,20 +20,7 @@ namespace PConnection
        dbcon.Open();
        IDbCommand dbcmd = dbcon.CreateCommand();
        
-       string sql =
-           "SELECT firstname, lastname " +
-           "FROM employee";
-       dbcmd.CommandText = sql;
-       IDataReader reader = dbcmd.ExecuteReader();
-       while(reader.Read()) {
-            string FirstName = (string) reader["firstname"];
-            string LastName = (string) reader["lastname"];
-            Console.WriteLine("Name: " +
-                  FirstName + " " + LastName);
-       }
-       // clean up
-       reader.Close();
-       reader = null;
+
        dbcmd.Dispose();
        dbcmd = null;
        dbcon.Close();
