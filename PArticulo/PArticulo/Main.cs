@@ -27,8 +27,7 @@ namespace PArticulo
 	    
 	    while (myReader.Read()) {
 	       Console.WriteLine("id={0} nombre{1}", myReader["id"], myReader["nombre"]);
-				
-	    }
+		}
 	    
 	    myReader.Close();
 		//Cerramos obtención de datos
