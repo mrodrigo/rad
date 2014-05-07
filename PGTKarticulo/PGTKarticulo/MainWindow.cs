@@ -13,7 +13,7 @@ public MainWindow (): base (Gtk.WindowType.Toplevel)
 {
 Build ();
 
-mySqlConnection = new MySqlConnection("Server=localhost;Database=rad;User Id=root;Password=sistemas");
+mySqlConnection = new MySqlConnection("Server=localhost;Database=dbrepaso;User Id=root;Password=sistemas");
 mySqlConnection.Open ();
 
 string selectSql =
