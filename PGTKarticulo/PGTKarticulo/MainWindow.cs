@@ -16,9 +16,9 @@ Build ();
 mySqlConnection = new MySqlConnection("Server=localhost;Database=dbrepaso;User Id=root;Password=sistemas");
 mySqlConnection.Open ();
 
-string selectSql =
+string selectText =
 "select id,nombre,categoria,precio from articulo";
-TreeViewHelper treeViewHelper = new TreeViewHelper(treeView, mySqlConnection, selectSql);
+TreeViewHelper treeViewHelper = new TreeViewHelper(treeView, mySqlConnection, selectText);
 
 ListStore listStore = treeViewHelper.ListStore;
 
