@@ -34,7 +34,6 @@
     <Reference Include="System" />
     <Reference Include="MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=20449f9ba87f7ae2">
       <Private>False</Private>
-      <Package>mysql-connector-net</Package>
     </Reference>
     <Reference Include="System.Data" />
   </ItemGroup>
